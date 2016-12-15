@@ -12,9 +12,9 @@ cd -
 rm -rf bin
 mkdir bin
 mv note ./bin
-cp -r views ./bin
-cp -r static ./bin
-cp -r conf ./bin
+cp -r ./views ./bin
+cp -r ./static ./bin
+cp -r ./conf ./bin
 
 echo "Build ok"
 exit 0
