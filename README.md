@@ -35,6 +35,12 @@
 
 ## make image
     docker build -t mynote:master ./
+    
+## save image
+    docker save -o xxx mynote:master
 
+## load image
+    docker load -i xxx
+    
 ## make container
     docker run -d -p 0.0.0.0:8080:8080 -name mynote mynote:master
