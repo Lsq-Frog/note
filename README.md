@@ -43,4 +43,4 @@
     docker load -i xxx
     
 ## make container
-    docker run -d -p 0.0.0.0:8080:8080 -name mynote mynote:master
+    docker run -d -p 0.0.0.0:8080:8080 --name mynote mynote:master
