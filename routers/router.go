@@ -7,8 +7,9 @@ import (
 )
 
 func init() {
-	beego.SetStaticPath("images", "static/img")
-	beego.SetStaticPath("css", "static/css/")
-	beego.SetStaticPath("js", "static/js")
-	beego.Include(&controllers.BlogController{})
+	beego.Router("/", &controllers.MainController{})
+	// beego.SetStaticPath("images", "static/img")
+	// beego.SetStaticPath("css", "static/css/")
+	// beego.SetStaticPath("js", "static/js")
+	// beego.Include(&controllers.BlogController{})
 }
