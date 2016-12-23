@@ -15,7 +15,7 @@ cp -r ./conf ./bin
 docker build -t mynote:master ./
 
 # updata server
-docker run -d -p 0.0.0.0:8080:8080 --name mynote mynote:master
+docker run -d -p 0.0.0.0:80:80 --name mynote mynote:master
 
 echo "updata ok"
 exit 0
